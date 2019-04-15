@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Window Example</title>
+		<script src="jswindow.js"></script>
+	</head>
+	<body>
+		<form>
+			<table style="border-spacing:0.5rem;text-align:center;width:500px;height:500px;border-color:rgb(43, 43, 247)" border="1">
+				<tr>
+					<td colspan="4">Create a new window</td>
+				</tr>
+				<tr>
+					<td colspan="4">Window Size</td>
+				</tr>
+				<tr>
+					<td>Width:</td>
+					<td><input type="text" id="widthInput" /></td>
+					<td>Height:</td>
+					<td><input type="text" id="heightInput" /></td>
+				</tr>
+				<tr>
+					<td colspan="4">POSITION</td>
+				</tr>
+				<tr>
+					<td>Left:</td>
+					<td><input type="text" id="leftPosition" /></td>
+					<td>Top:</td>
+					<td><input type="text" id="rightPosition" /></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<input type="submit" onclick="newWindow(document.getElementById('widthInput').value,document.getElementById('heightInput').value,document.getElementById('leftPosition').value,document.getElementById('rightPosition').value)" />
+					</td>
+					<td colspan="1">
+						<input type="reset" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

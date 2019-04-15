@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Compound interest using JavaScript</title>
+	</head>
+	<body>
+	--------------------------------------------------------<br>
+	*******Calculate Compound Interest*******<br>
+	--------------------------------------------------------<br>
+		<script>
+		var p = 1000;
+		var r = 10;
+		var n = 1;
+		document.write("<pre>Principle                 -        " + p + " rs</pre>");
+		document.write("<pre>Rate of Interest          -        " + r + "%</pre>");
+		document.write("<pre>Period                    -        " + n + " yr</pre>");
+		document.write("<pre>Comp Interest             -        " + ((p*Math.pow(1+(r/100),n))-p) + "</pre>");
+		</script>
+	</body>
+</html>

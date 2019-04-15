@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to JavaScript</title>
+	</head>
+	<body>
+		<script>
+			const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+			const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+
+			var d = new Date();
+			var datestring = dayNames[d.getDay()]  + " " + monthNames[d.getMonth()] + " " + d.getDate() + " " +
+			d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + " " + d.getFullYear();
+			document.write(datestring + "<br>");
+			if(d.getHours() < 12) {
+				document.write("Good Morning");
+			} else if (d.getHours() >= 12 && d.getHours() <= 17) {
+				document.write("Good Afternoon");
+			} else {
+				document.write("Good Evening");
+			}
+		</script>
+	</body>
+</html>
